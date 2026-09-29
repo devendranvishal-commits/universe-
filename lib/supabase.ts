@@ -1,2 +1,2 @@
-export * from "./client";
-export * from "./server";
+export { createClient as createBrowserSupabaseClient } from "./client";
+export { createClient as createServerSupabaseClient } from "./server";
