@@ -141,10 +141,6 @@ ${query}
 
       maxPrice: parsed.maxPrice,
 
-      startDate: null,
-
-      endDate: null,
-
       limit: DEFAULT_SEARCH_LIMIT,
     },
   };
