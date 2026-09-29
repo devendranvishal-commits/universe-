@@ -2,6 +2,7 @@
 
 import {
   FormEvent,
+  Suspense,
   useEffect,
   useState,
 } from "react";
@@ -16,6 +17,14 @@ import {
 } from "next/navigation";
 
 export default function AppHeader() {
+  return (
+    <Suspense fallback={null}>
+      <AppHeaderInner />
+    </Suspense>
+  );
+}
+
+function AppHeaderInner() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
