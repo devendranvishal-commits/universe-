@@ -1,7 +1,6 @@
 import OpenAI from "openai";
 import {
   ALL_SEARCH_MODULES,
-  DEFAULT_SEARCH_LIMIT,
   SearchIntent,
 } from "./types";
 
@@ -140,8 +139,6 @@ ${query}
       minPrice: parsed.minPrice,
 
       maxPrice: parsed.maxPrice,
-
-      limit: DEFAULT_SEARCH_LIMIT,
     },
   };
 }
