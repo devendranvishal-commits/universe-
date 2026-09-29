@@ -208,12 +208,9 @@ const [loadingConversations, setLoadingConversations] =
 
     setChatText("");
     setChatLoading(true);
-setChatText("");
-setChatLoading(true);
 
-const isNewConversation = !conversationId;
+    const isNewConversation = !conversationId;
 
-try {
     try {
       const response = await fetch("/api/ai", {
         method: "POST",
